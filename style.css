@@ -1,0 +1,495 @@
+html{
+  font-size: 65%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+header {
+  background-color: #f2f2f2;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 2rem 9%;
+  box-shadow: 0 .5rem 1rem rgba(0, 0,0, 0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+    
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar-brand {
+  padding: 0px 10px;
+}
+
+.navbar-brand:hover {
+  color: #FFFEF0 !important;
+}
+
+/* Button Layout */
+.btn, 
+.btn-primary, 
+input[type="submit"],
+.signup-form input[type="submit"],
+.social-login .google-btn,
+.social-login .apple-btn,
+.social-login .facebook-btn {
+  background-color: #f8f9fa !important;
+  border: 1px solid #f8f9fa !important;
+  border-radius: 4px !important;
+  color: #3c4043 !important;
+  cursor: pointer !important;
+  font-family: arial,sans-serif;
+  font-size: 14px !important;
+  height: 36px !important;
+  line-height: 27px !important;
+  min-width: 54px !important;
+  padding: 0 auto !important;
+  text-align: center !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  touch-action: manipulation !important;
+  /* white-space: pre !important; */
+}
+
+.btn:hover, .btn-primary:hover,
+input[type="submit"]:hover,
+.signup-form input[type="submit"]:hover,
+.social-login .google-btn:hover,
+.social-login .apple-btn:hover,
+.social-login .facebook-btn:hover {
+  background-color: #FFFEF0 !important;
+  border-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  color: #202124;
+}
+
+.btn:focus, .btn-primary:focus,
+input[type="submit"]:focus,
+.signup-form input[type="submit"]:focus,
+.social-login .google-btn:focus,
+.social-login .apple-btn:focus,
+.social-login .facebook-btn:focus {
+  border-color: #4285f4;
+  outline: none;
+}
+
+.btn, 
+.btn-primary {
+  display: block;
+  margin: 0 auto;
+  width: 120px !important;
+}
+
+.social-login .google-btn,
+.social-login .apple-btn,
+.social-login .facebook-btn {
+  width: 200px;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  margin: 20px;
+  padding: 2rem 9%;
+}
+
+.carousel-caption h1 {
+  position: fixed;
+  top: 10%;
+  left: 40%;
+  right: 40%;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-flex {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  width: 50%;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-login {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-login p {
+  margin: 10px 0;
+}
+
+.social-login img {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.social-login a {
+  height: 100px;
+  width: 250px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.signup-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  display: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.signup-form {
+  width: 40%;
+  max-width: 80%;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.signup-form .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form input[type="tel"],
+.signup-form input[type="email"],
+.signup-form textarea {
+  width: 100%;
+  padding: 2px;
+  margin: 1px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.signup-form textarea {
+  resize: vertical;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signup-link a {
+  color: #4285f4;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+.login-form label,
+.login-form input,
+.login-form span,
+.login-form button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+span.forget-password {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.header {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.small-header {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+/* .feature i {
+  align-items: center;
+  justify-content: center;
+} */
+
+.attractive-layout {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.attractive-text {
+  font-size: 1.6rem;
+  color: #333333;
+  text-align: center;
+  padding:1rem 0;
+  line-height: 1.5;
+}
+
+.address {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+#map {
+  height: 400px;
+  width: 96%;
+  margin: 1% 2%;
+  position: relative;
+}
+
+#map .mapboxgl-ctrl-bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+.social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.footer img {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.footer-links a {
+  color: #ebebeb;
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.bottom-bar p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.features-section .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+  
+.features-section .feature i {
+  margin-bottom: 10px;
+}
+  
+.fa {
+  font-size: inherit;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s;
+  border-radius: 50%;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-instagram:hover {
+  color: #c32aa3;
+}
+
+.fa-linkedin:hover {
+  color: #0e76a8;
+}
+
+.speciality-section .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+  
+.speciality-section .box-container .box{
+  flex:1 1 40rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border:.1rem solid rgba(0,0,0,.3);
+  cursor: pointer;
+  border-radius: .5rem;
+}
+  
+.speciality-section .box-container .box .image{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  position: absolute;
+  top:-100%;
+  left:0;
+}
+  
+  .speciality-section .box-container .box .content{
+    text-align: center;
+    background:#fff;
+    padding:2rem;
+  }
+  
+  .speciality-section .box-container .box:hover .content img{
+    margin:1.5rem 0;
+  }
+  
+  .speciality-section .box-container .box .image{
+      top: 0;
+  }
+
+  .speciality-section .box-container .box:hover .image{
+      transform: translateY(100%);
+  }
