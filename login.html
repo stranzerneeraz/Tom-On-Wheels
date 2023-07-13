@@ -4,106 +4,130 @@
     <title>Tom On Wheels - Login</title>
     <link rel="stylesheet" type="text/css" href="style.css" /> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
   </head>
   <body>
-    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-bottom-dark fixed-top" data-bs-theme="dark">
+      <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="images/logo.jpeg" alt="Logo" width="40" height="32" class="d-inline-block align-text-top">
         </a>
-        <a class="navbar-brand" href="index.html">Home</a>
-        <a class="navbar-brand" href="menu.html">Menu</a>
-        <a class="navbar-brand" href="orders.html">Orders</a>
-        <a class="navbar-brand" href="contact.html">Contact Us</a>
-        <a class="navbar-brand" href="login.html">Login</a>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-primary" type="submit">Search</button>
-        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="orders.html">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
-
-    <div class="container">
+    <div class="content">
+      <div class="container">
         <h1 class="header">Login</h1>
         <div class="form-container">
-        <form action="" class="login-form" method="POST">
-          <label for="username">Email or Mobile:</label>
-          <input type="text" id="username" placeholder="Enter Email or Mobile Number" name="Email or Mobile" required>
-          
-          <label for="password">Password:</label>
-          <input type="password" id="password" placeholder="Enter Password" name="password" required>
-          
-          <button class="btn btn-primary" type="submit" onclick="">Login</button>
-          <span class="forget-password"><a href="#">Forget Password?</a></span>
-        </form>
-      </div>
-       
+          <form action="" class="login-form" method="POST">
+            <label for="username" class="label-text">Email or Mobile:</label>
+            <input type="text" id="username" placeholder="Enter Email or Mobile Number" name="Email or Mobile" required>
+            
+            <label for="password" class="label-text">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password" name="password" required>
+            
+            <button class="btn btn-primary" type="submit" onclick="">Login</button>
+            <span class="forget-password attractive-text-center"><a href="#">Forget Password?</a></span>
+          </form>
+        </div>
     
         <div class="social-login">
-          <p class="attractive-text">Or continue with:</p>
-          <a href="#" class="google-btn">
-            <img src="images/google.png" alt="Google Logo">
-            Continue with Google
-          </a>
-          <br/><br/>
-          <a href="#" class="apple-btn">
-            <img src="images/apple.png" alt="Apple Logo">
-            Continue with Apple
-          </a>
-          <br/><br/>
-          <a href="#" class="facebook-btn">
-            <img src="images/facebook.jpg" alt="Facebook Logo">
-            Continue with Facebook
-          </a>
+          <p class="attractive-text-center">Or continue with:</p>
+
+          <button type="button" class="btn btn-primary social-btn">
+            Continue with Google <i class="fab fa-google"></i>
+          </button>
+
+          <br/>
+
+          <button type="button" class="btn btn-primary social-btn">
+            Continue with Apple <i class="fab fa-apple"></i>
+          </button>
+
+          <br/>
+          
+          <button type = "button" class = "btn btn-primary social-btn">
+            Continue with Facebook <i class = "fab fa-facebook"></i>
+          </button>
         </div>
-        <p class="signup-link attractive-text">Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
+        <p class="signup-link attractive-text-center mb-0">Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
        
-  </div>
-
-  <div class="signup-container" id="signupContainer">
-    <div class="signup-form">
-      <h1 class="header">Sign Up</h1>
-      <form action="" method="POST">
-        <label for="signup-name">Name:</label>
-      <input type="text" id="signup-name" name="signup-name" required>
-
-      <label for="signup-email">Email Address:</label>
-      <input type="email" id="signup-email" name="signup-email" required>
-
-      <label for="signup-mobile">Mobile Number:</label>
-      <div class="input-group">
-        <select id="country-code" name="country-code">
-            <option value="+44">
-              <i class="fa fa-flag flag-uk"></i> +44
-            </option>
-            <option value="+1">
-              <i class="fa fa-flag flag-us"></i> +1
-            </option>
-        </select>
-        <input type="tel" id="signup-mobile" name="signup-mobile" required>
       </div>
 
-        <label for="signup-username">Username:</label>
-        <input type="text" id="signup-username" name="signup-username" required>
-        
-        <label for="signup-password">Password:</label>
-        <input type="password" id="signup-password" name="signup-password" required>
+      <div class="signup-container" id="signupContainer">
+        <div class="signup-form">
+          <h1 class="header">Sign Up</h1>
+          <form action="" method="POST">
+            <label for="signup-name" class="label-text">Name:</label>
+          <input type="text" id="signup-name" name="signup-name" required>
 
-        <label for="signup-address">Address:</label>
-      <textarea id="signup-address" name="signup-address" rows="3" required></textarea>
+          <label for="signup-email" class="label-text">Email Address:</label>
+          <input type="email" id="signup-email" name="signup-email" required>
 
-      <label for="signup-postcode">Postcode:</label>
-      <input type="text" id="signup-postcode" name="signup-postcode" required>
-        
-      <button class="btn btn-primary" type="submit" onclick="">Sign Up</button>
-      </form>
-      <p class="signup-link">Already have an account? <a href="#" onclick="hideSignup()">Log in</a></p>
-      <button type="button" class="btn cancel-btn" onclick="hideSignup()">Cancel</button>
-    </div>
-  </div>
+          <label for="signup-mobile" class="label-text">Mobile Number:</label>
+          <div class="input-group">
+            <select id="country-code" name="country-code">
+                <option value="+44">
+                  <i class="fa fa-flag flag-uk"></i> +44
+                </option>
+                <option value="+1">
+                  <i class="fa fa-flag flag-us"></i> +1
+                </option>
+            </select>
+            <input type="tel" id="signup-mobile" name="signup-mobile" required>
+          </div>
 
-  <footer class="footer">
+            <label for="signup-username" class="label-text">Username:</label>
+            <input type="text" id="signup-username" name="signup-username" required>
+            
+            <label for="signup-password" class="label-text">Password:</label>
+            <input type="password" id="signup-password" name="signup-password" required>
+
+            <label for="signup-confirm-password" class="label-text">Confirm Password:</label>
+            <input type="password" id="signup-confirm-password" name="signup-confirm-password" required>
+
+            <label for="signup-address" class="label-text">Address:</label>
+          <textarea id="signup-address" name="signup-address" rows="2" required></textarea>
+
+          <label for="signup-postcode" class="label-text">Postcode:</label>
+          <input type="text" id="signup-postcode" name="signup-postcode" required>
+            
+          <button class="btn btn-primary" type="submit" onclick="">Sign Up</button>
+          </form>
+          <p class="signup-link attractive-text-center">Already have an account? <a href="#" onclick="hideSignup()">Log in</a></p>
+          <button type="button" class="btn cancel-btn" onclick="hideSignup()">Cancel</button>
+        </div>
+      </div>
+</div>
+<footer class="footer">
+  <div class="container">
     <div class="row">
       <div class="col-md-4">
       <img src="images/logo.jpeg" alt="Tom On Wheels Logo" width="120">
@@ -134,6 +158,7 @@
         <div class="col-md-4">
         </div>
         <div class="col-md-4">
+          
           <ul class="footer-links">
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Service</a></li>
@@ -142,6 +167,7 @@
           </ul>
         </div>
       </div>
+    </div>
 </footer>
 
     <script src="script.js"></script>

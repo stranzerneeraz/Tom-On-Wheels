@@ -4,67 +4,233 @@
     <title>Tom On Wheels - Orders</title>
     <link rel="stylesheet" type="text/css" href="style.css" /> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-bottom-dark fixed-top" data-bs-theme="dark">
+      <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="images/logo.jpeg" alt="Logo" width="40" height="32" class="d-inline-block align-text-top">
         </a>
-        <a class="navbar-brand" href="index.html">Home</a>
-        <a class="navbar-brand" href="menu.html">Menu</a>
-        <a class="navbar-brand" href="orders.html">Orders</a>
-        <a class="navbar-brand" href="contact.html">Contact Us</a>
-        <a class="navbar-brand" href="login.html">Login</a>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-primary" type="submit">Search</button>
-        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="orders.html">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
 
+    <div class="content">
+      <div class="container">
+        <div class="heading">
+          <h2 class="header">Your Order</h2>
+        </div>
+        <div class="cart-items">
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="images/hamburger.jpg" alt="chicken-burger" />
+            </div>
+            <div class="item-quantity">
+              <button class="minus-btn">-</button>
+              <input type="number" value="1" min="1" />
+              <button class="plus-btn">+</button>
+            </div>
+            <div class="item-details">
+              <h3 class="header">Hamburger</h3>
+            </div>
+            <div class="item-remove">
+              <p class="price">£3.99</p>
+              <button class="btn-remove"> </button>
+            </div>
+          </div>
+      
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="images/chicken-pizza.jpg" alt="chicken-pizza" />
+            </div>  
+            <div class="item-quantity">
+              <button class="minus-btn">-</button>
+              <input type="number" value="2" min="1" />
+              <button class="plus-btn">+</button>
+            </div>
+            <div class="item-details">
+              <h3 class="header">Chicken Pizza</h3>
+            </div>
+            <div class="item-remove">
+              <p class="price">£4.49</p>
+              <button class="btn-remove"> </button>
+            </div>
+          </div>
+      
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="images/fish-noodles.jpg" alt="cold-drinks" />
+            </div>
+            <div class="item-quantity">
+              <button class="minus-btn">-</button>
+              <input type="number" value="1" min="1" />
+              <button class="plus-btn">+</button>
+            </div>
+            <div class="item-details">
+              <h3 class="header">Fish Noodles</h3>
+            </div>
+            <div class="item-remove">
+              <p class="price">£6.99</p>
+              <button class="btn-remove">  </button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="images/platter-momo.jpg" alt="platter-momo" />
+            </div>
+              <div class="item-quantity">
+                <button class="minus-btn">-</button>
+                <input type="number" value="1" min="1" />
+                <button class="plus-btn">+</button>
+              </div>
+              <div class="item-details">
+                <h3 class="header">Platter Momo</h3>
+            </div>
+            <div class="item-remove">
+              <p class="price">£7.99</p>
+              <button class="btn-remove">  </button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="cart-total">
+          <h4>Total: £23.46</h4>
+        </div>
+
+        <div class="checkout-panel mb-0">
+          <div class="panel-body">
+            <h2 class="header">Proceed with Payment</h2>
+            <div class="payment-method">
+              <label for="card" class="method card">
+                <div class="card-logos">
+                  <img src="images/visa.png" alt="Visa Logo" />
+                  <img src="images/mastercard.png" alt="Mastercard Logo" />
+                </div>
+                <div class="radio-input">
+                  <input id="card" type="radio" name="payment" />
+                  Pay £23.46 with Credit Card
+                </div>
+              </label>
+              <label for="paypal" class="method paypal">
+                <div class="card-logos">
+                  <img src="images/paypal.png" alt="PayPal Logo" />
+                </div>  
+                <div class="radio-input">
+                  <input id="paypal" type="radio" name="payment" />
+                  Pay £23.46 with PayPal
+                </div>
+              </label>
+              <label for="apple-pay" class="method apple-pay">
+                <div class="card-logos">
+                  <div class="image-container">
+                    <img src="images/apple-pay.png" alt="Apple Pay Logo" />  
+                  </div>
+                </div>  
+                <div class="radio-input">
+                  <input id="paypal" type="radio" name="payment" />
+                  Pay £23.46 with Apple Pay
+                </div>
+              </label>
+            </div>
+            <div class="input-fields">
+              <div class="column-1">
+                <label for="cardholder">Name</label>
+                <input type="text" id="cardholder" />
+                <div class="small-inputs">
+                  <div>
+                    <label for="date">Valid date</label>
+                    <input type="text" id="date" />
+                  </div>
+                  <div>
+                    <label for="verification">CVV / CVC *</label>
+                    <input type="password" id="verification" />
+                  </div>
+                </div>
+              </div>
+              <div class="column-2">
+                <label for="cardnumber">Card Number</label>
+                <input type="password" id="cardnumber" />
+                <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary">Checkout</button>
+        </div>        
+      </div>
+    </div>
+
     <footer class="footer">
-      <div class="row">
-        <div class="col-md-4">
-        <img src="images/logo.jpeg" alt="Tom On Wheels Logo" width="120">
-      </div>
-        <div class="col-md-4">
-          <h4>Contact Us</h4>
-          <p>Have any questions or feedback? We'd love to hear from you!</p>
-          <ul class="contact-info">
-            <li><i class="fa fa-phone"></i> +44-123-456-7890</li>
-            <li><i class="fa fa-envelope"></i> info@tomonwheels.com</li>
-            <li><i class="fa fa-map-marker"></i> B71 2RJ, West Bromwich, United Kingdom</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>Follow Us</h4>
-          <ul class="social-media">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
+      <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <p>&copy; 2023 Tom On Wheels. All rights reserved.</p>
+            <img src="images/logo.jpeg" alt="Tom On Wheels Logo" width="120">
           </div>
           <div class="col-md-4">
+            <h4>Contact Us</h4>
+            <p>Have any questions or feedback? We'd love to hear from you!</p>
+            <ul class="contact-info">
+              <li><i class="fa fa-phone"></i> +44-123-456-7890</li>
+              <li><i class="fa fa-envelope"></i> info@tomonwheels.com</li>
+              <li><i class="fa fa-map-marker"></i> B71 2RJ, West Bromwich, United Kingdom</li>
+            </ul>
           </div>
           <div class="col-md-4">
-            <ul class="footer-links">
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+            <h4>Follow Us</h4>
+            <ul class="social-media">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
-  </footer>
+          <div class="row">
+            <div class="col-md-4">
+              <p>&copy; 2023 Tom On Wheels. All rights reserved.</p>
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+              
+              <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
