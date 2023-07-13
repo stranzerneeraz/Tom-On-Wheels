@@ -327,8 +327,8 @@ span.forget-password {
 
 #map {
   height: 400px;
-  width: 96%;
-  margin: 1% 2%;
+  width: 100%;
+  margin: 1% 0%;
   position: relative;
 }
 
