@@ -3,15 +3,16 @@
   <head>
     <title>Tom On Wheels - Menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css, bootstrap and fonts imports -->
     <link rel="stylesheet" type="text/css" href="style.css" /> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   </head>
 
   <body>
+    <!-- Navbar container -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-bottom-dark fixed-top" data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -51,6 +52,7 @@
         <div class="card">
           <h1 class="header">Explore Menu</h1>
           <div class="card-body p-5">
+             <!-- Menu Fiter section -->
             <div class="row">
               <div class="col-lg-2 col-md-3 col-sm-12 col-12">
                 <div class="menu-options">
@@ -80,16 +82,17 @@
                     </div>
                   </div>
     
+                  <!-- Sort by price range -->
                   <div class="price-range">
                     <h4 for="price" class="form-label">Price Range:</h4>
                     <label for="price" class="form-label">Price Range:</label>
                     <input type="range" class="form-range" min="0" max="5" id="priceRange" value="0" step="10">
-                    <!-- <input type="range" id="priceRange" min="0" max="100" value="0" step="10"> -->
                     <span id="priceRangeValue">£0</span>
                   </div>
-              
                 </div>
               </div>
+
+              <!-- Menu details -->
               <div class="col-lg-10 col-12">
                 <div class="row">
                   <div class="col-md-4 col-12">
@@ -99,8 +102,7 @@
                       </a>
                       <div class="card-body" >
                         <h5 class="card-title header">Italian Spaghetti</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">Italian Spaghetti Meal: Alfredo Sause, Noodles, Tomatoes, Spinach, Hot Dog</p> -->
+                        <h6 class="card-title header">£5.99</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
@@ -112,8 +114,7 @@
                       </a>
                       <div class="card-body">
                         <h5 class="card-title header">Veg Pizza</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">Veg Pizza: Bread, Cheese, Olive, Leaf, Tomatoes, Vegetables</p> -->
+                        <h6 class="card-title header">£5.49</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
@@ -125,8 +126,7 @@
                       </a>
                       <div class="card-body">
                         <h5 class="card-title header">Salmon Fish</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">Salmon Fish: Salmon, Vegetables, Lime, Croissant</p> -->
+                        <h6 class="card-title header">£6.49</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
@@ -138,8 +138,7 @@
                       </a>
                       <div class="card-body">
                         <h5 class="card-title header">Hamburger</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">Hamburger: Bun, Pork Patty, Mixed Herb, Mayonnaise, Lettuce, Onion, Smoked Paprika</p> -->
+                        <h6 class="card-title header">£3.99</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
@@ -151,8 +150,7 @@
                       </a>
                       <div class="card-body">
                         <h5 class="card-title header">Fish Noodles</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">Fish Noodles: Noodles, Broccoli, Onion, Fish Fillet, Egg</p> -->
+                        <h6 class="card-title header">£5.99</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
@@ -164,8 +162,7 @@
                       </a>
                       <div class="card-body">
                         <h5 class="card-title header">Sandwich</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">Sandwich: White Bread, Sausage, Butter, Lettuce, Tomatoes, Onion</p> -->
+                        <h6 class="card-title header">£3.49</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
@@ -177,8 +174,7 @@
                       </a>
                       <div class="card-body">
                         <h5 class="card-title header">Chicken Pizza</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">Chicken Pizza: Bread, Cheese, Olive, Boneless Chicken, Tomatoes, Onion, Mushroom</p> -->
+                        <h6 class="card-title header">£8.99</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
@@ -190,8 +186,7 @@
                       </a>
                       <div class="card-body">
                         <h5 class="card-title header">Chicken Burger</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">Chicken Burger: Bun, Chicken Steak Patty, Mixed Herb, Mayonnaise, Lettuce, Onion, Smoked Paprika</p> -->
+                        <h6 class="card-title header">£4.49</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
@@ -203,8 +198,7 @@
                       </a>
                       <div class="card-body">
                         <h5 class="card-title header">Platter Momo</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">Platter Momo: Flour, Chicken Keema, Onion, Chilli, Chutney</p> -->
+                        <h6 class="card-title header">£7.49</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
@@ -216,8 +210,7 @@
                       </a>
                       <div class="card-body">
                         <h5 class="card-title header">Chicken Burrito</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">Chicken Burrito: Boneless Chicken Thigh, Sweet Smoked Paprika, Lettuce, Tomatoes, Cheese, Onion</p> -->
+                        <h6 class="card-title header">£4.99</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
@@ -229,8 +222,7 @@
                       </a>
                       <div class="card-body">
                         <h5 class="card-title header">French Fries</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">French Fries: Fries, Chips, Potatoes</p> -->
+                        <h6 class="card-title header">£2.99</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
@@ -242,33 +234,34 @@
                       </a>
                       <div class="card-body">
                         <h5 class="card-title header">Chicken Curry</h5>
-                        <h6 class="card-title header">£5.50</h6>
-                        <!-- <p class="card-text">Chicken Curry: Boneless Chicken, Curry, Chilli, Flavor</p> -->
+                        <h6 class="card-title header">£6.99</h6>
                         <button class="btn btn-primary add-to-bag">Add to Bag<i class = "fas fa-shopping-cart"></i></button>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
+          <!-- Pagination -->
+          <ul class="pagination">
+            <li class="disabled"><a href="#">Previous</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">Next</a></li>
+          </ul>
         </div>
-        <ul class="pagination">
-          <li class="disabled"><a href="#">Previous</a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Next</a></li>
-        </ul>
       </div>
     </div>
       
-    
+    <!-- Footer container -->
     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-          <img src="images/logo.jpeg" alt="Tom On Wheels Logo" width="120">
-        </div>
+            <img src="images/logo.jpeg" alt="Tom On Wheels Logo" width="120">
+          </div>
           <div class="col-md-4">
             <h4>Contact Us</h4>
             <p>Have any questions or feedback? We'd love to hear from you!</p>
@@ -288,31 +281,25 @@
             </ul>
           </div>
         </div>
-          <div class="row">
-            <div class="col-md-4">
-              <p>&copy; 2023 Tom On Wheels. All rights reserved.</p>
-            </div>
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-4">
-              
-              <ul class="footer-links">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-            </div>
+        <div class="row">
+          <div class="col-md-4">
+            <p>&copy; 2023 Tom On Wheels. All rights reserved.</p>
+          </div>
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">              
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
           </div>
         </div>
+      </div>
     </footer>
-
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
-
-   
